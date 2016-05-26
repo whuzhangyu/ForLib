@@ -31,9 +31,5 @@
 		<File RelativePath=".\NormalizedLegendre1.f90"/>
 		<File RelativePath=".\SphericalDistance.f90"/>
 		<File RelativePath=".\StokesFunc.f90"/>
-		<File RelativePath=".\xBorkowski.f90"/>
-		<File RelativePath=".\xcal2mjd.f90"/>
-		<File RelativePath=".\xNormalizedLegendre.f90"/>
-		<File RelativePath=".\xSphericalDistance.f90"/>
-		<File RelativePath=".\xStokesFunc.f90"/></Filter></Files>
+		<File RelativePath=".\xNormalizedLegendre.f90"/></Filter></Files>
 	<Globals/></VisualStudioProject>
