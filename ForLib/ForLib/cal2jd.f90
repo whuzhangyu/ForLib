@@ -3,10 +3,10 @@ subroutine cal2jd(year, month, day, hour, minute ,sec, jd, sod)
 ! Function  : Convert Gregorian calendar date to integer Julian day and 
 !             seconds of day, JD is based on Universal Time, also works for BC
 ! Input     :
-!           year, month, day, hour, minute, sec - Geogorian date
+!             year, month, day, hour, minute, sec - Geogorian date
 ! Output    :
-!           jd      - integer Julian day 
-!           sod     - double seconds of day
+!             jd      - integer Julian day 
+!             sod     - double seconds of day
 ! Author    : Yu Zhang, zhang.6345@osu.edu, Ohio State University
 ! Reference : wikipedia https://en.wikipedia.org/wiki/Julian_day
 !****************************************************************************
@@ -15,8 +15,10 @@ subroutine cal2jd(year, month, day, hour, minute ,sec, jd, sod)
     ! Variables
     integer, intent(in) :: year, month, day, hour, minute
     real, intent(in)    :: sec
-    integer             :: jd, a, y, m
-    real                :: sod
+    integer, intent(out):: jd
+    real, intent(out)   :: sod
+    integer             :: a, y, m
+    
     
     ! compute first the number of years (y) and months (m) since 
     ! March 1 -4800 (March 1, 4801 BC)

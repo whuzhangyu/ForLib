@@ -3,10 +3,10 @@ subroutine cal2mjd(year, month, day, hour, minute ,sec, mjd, sod)
 ! Function  : Convert Gregorian calendar date to integer modified Julian day
 !             and seconds of day, JD is based on Universal Time
 ! Input     :
-!           year, month, day, hour, minute, sec - Geogorian date
+!             year, month, day, hour, minute, sec - Geogorian date
 ! Output    :
-!           mjd     - integer modified Julian day 
-!           sod     - double seconds of day
+!             mjd     - integer modified Julian day 
+!             sod     - double seconds of day
 ! Author    : Yu Zhang, zhang.6345@osu.edu, Ohio State University
 ! Reference : Richards, E.G. 2012, "Calendars," from the Explanatory 
 !             Supplement to the Astronomical Almanac, 3rd edition, S.E Urban 
@@ -18,8 +18,10 @@ subroutine cal2mjd(year, month, day, hour, minute ,sec, mjd, sod)
     ! Variables
     integer, intent(in) :: year, month, day, hour, minute
     real, intent(in)    :: sec
-    integer             :: mjd, yr, mon
-    real                :: sod
+    integer, intent(out):: mjd
+    real, intent(out)   :: sod
+    integer             :: yr, mon
+    
     
     yr = year
     mon= month

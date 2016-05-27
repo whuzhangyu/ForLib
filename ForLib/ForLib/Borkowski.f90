@@ -16,7 +16,7 @@ Subroutine Borkowski(x, y, z, a, f, phi, lambda, h)
     implicit none
     ! Variables
     real, intent(in)    :: x, y, z, a, f
-    real                :: phi, lambda, h
+    real, intent(out)   :: phi, lambda, h
     real                :: b, r, E, bigF, P, Q, D, v, G, t, pi
     
     pi = 4.d0*atan(1.d0)

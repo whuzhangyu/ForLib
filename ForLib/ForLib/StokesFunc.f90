@@ -2,9 +2,9 @@ real function StokesFunc(psi)
 !****************************************************************************
 ! Function  : Compute the Stokes's function
 ! Input     :
-!           psi     - geocentric angle, in radius
+!             psi     - geocentric angle, in radius
 ! Output    :
-!           s       - Stokes's function value
+!             s       - Stokes's function value
 ! Author    : Yu Zhang, zhang.6345@osu.edu, Ohio State University
 ! Reference : H&M, Physical Geodesy (2nd Edition) P104, 2-305 
 !****************************************************************************
